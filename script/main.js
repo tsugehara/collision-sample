@@ -28,11 +28,11 @@ function main(param) {
 		// 接触判定と当たり判定を毎フレーム実施する
 		scene.update.add(function() {
 			// 全エンティティの接触を検査
-			for (let i = 0; i < scene.children.length - 1; i++) {
+			for (var i = 0; i < scene.children.length - 1; i++) {
 				var current = scene.children[i];
 				var damage = 0;
 				// 接触していればで判定
-				for (let j = i + 1; j < scene.children.length; j++) {
+				for (var j = i + 1; j < scene.children.length; j++) {
 					// Note: ここでtag.rightが同一であればスキップとかやってもよい
 					// CollisionモジュールのintersectAreasで接触判定
 					var target = scene.children[j];

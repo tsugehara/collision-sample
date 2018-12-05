@@ -14,7 +14,7 @@ function main(param) {
 			// 画面の大きさの左半分のどこかに移動させる
 			rect.moveTo(
 				g.game.random.get(0, g.game.width / 2 - rect.width),
-				g.game.random.get(0, g.game.height - rect.height),
+				g.game.random.get(0, g.game.height - rect.height)
 			);
 			rect.modified();
 		});
